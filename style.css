@@ -84,10 +84,25 @@ h3 {
     background-color: lavenderblush;
     font-family: 'Rubik', sans-serif;
     font-size: 1rem;
+    color: black;
 }
 .option-row select: focus {
     outline: none;
     border-color: #4B0082;
+}
+.option-row select optgroup {
+    font-weight: bold;
+    font-style: normal;
+    background-color:lavenderblush;
+    color:#4B0082;
+}
+.option-row select option {
+    font-weight: normal;
+    background-color: lavenderblush;
+    color: black;
+}
+.option-row select optgroup option {
+    padding-left: 20px;
 }
 .option-row input[type="text"] {
     flex: 2;
@@ -101,4 +116,13 @@ h3 {
 .option-row input[type="text"]:focus {
     outline: none;
     border-color: #4B0082;
+}
+.option-row select option:first-child {
+    color: #757575;
+}
+.option-row input[type="text"]::placeholder {
+    color: #757575;
+}
+.option-row select:invalid {
+    color: #757575;
 }
