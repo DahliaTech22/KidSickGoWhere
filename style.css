@@ -59,6 +59,23 @@ h3 {
     text-align: left;
     margin-right: 5px;
 }
+.option-row input[type="date"] {
+    flex: 2;
+    padding: 5px;
+    border: 2px solid #4B0082;
+    border-radius: 5px;
+    background-color: lavenderblush;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+.option-row input[type="date"]:focus {
+    outline: none;
+    border-color: #4B0082;
+}
+.option-row input[type="date"]::-webkit-calendar-picker-indicator {
+    padding: 5px;
+    cursor: pointer;
+}
 .option-row select {
     flex: 2;
     padding: 5px;
@@ -70,6 +87,18 @@ h3 {
 }
 .option-row select: focus {
     outline: none;
-    border-color: #8A2BE2;
-    box-shadow: 0 0 5px rgba(138, 43, 198, 0.5);
+    border-color: #4B0082;
+}
+.option-row input[type="text"] {
+    flex: 2;
+    padding: 5px 5px 5px 10px;
+    border: 2px solid #4B0082;
+    border-radius: 5px;
+    background-color: lavenderblush;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+.option-row input[type="text"]:focus {
+    outline: none;
+    border-color: #4B0082;
 }

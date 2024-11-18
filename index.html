@@ -16,12 +16,7 @@
 <div class="purple-box">
     <div class="option-row">
         <h3>When?</h3>
-        <select id="when" name="when">
-            <option value="">Select a day</option>
-            <option value="today">Today</option>
-            <option value="tomorrow">Tomorrow</option>
-            <option value="other">Other (please specify)</option>
-        </select>
+        <input type="date" id="when" name="when" value="2024-11-20" min="2024-01-01" max="2030-12-31">
     </div>
     <div class="option-row">
         <h3>What time?</h3>
@@ -45,6 +40,7 @@
     </div>
     <div class="option-row new-line">
         <h3>Where?</h3>
-        <select id="where" name="where"></select>
+        <input type="text" id="where" name="where" placeholder="Enter postal code">
+    </div>
 </body>
 </html>
