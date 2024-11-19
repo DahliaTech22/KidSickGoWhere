@@ -117,3 +117,26 @@ h3 {
     outline: none;
     border-color: #4B0082;
 }
+.purple-box {
+    position: relative;
+    padding-bottom: 60px;
+}
+.submit-row {
+    positive: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+#getClinic {
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+#getClinic:hover {
+    background-color: #660099;
+}
