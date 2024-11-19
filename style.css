@@ -38,10 +38,12 @@ h3 {
     font-weight: 500;
 }
 .purple-box {
+    flex: 1;
     border: 5px solid #4B0082;
     border-radius: 20px;
     padding: 5px;
     margin: 10px auto;
+    margin-right: 20px;
     max-width: 30%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
 }
@@ -116,4 +118,45 @@ h3 {
 .option-row input[type="text"]:focus {
     outline: none;
     border-color: #4B0082;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 80%;
+}
+.arrow-button {
+    width: 150px;
+    height: 60px;
+    background-color: #4B0082;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.arrow-button::after {
+    content: '';
+    position: absolute;
+    right: -30px;
+    width: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #4B0082;
+    transition: border-left-color 0.3s;
+}
+.arrow-button:hover {
+    background-color: #6A0DAD;
+}
+.arrow-button:hover::after {
+    border-left-color: #6A0DAD;
+}
+.arrow-button span {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    z-index: 1;
 }
