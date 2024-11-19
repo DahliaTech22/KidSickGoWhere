@@ -7,7 +7,7 @@ body {
 .oval-image {
     width: 50%; /*This matches the max-width of the img */
     max-width: 700px; /*You can adjust this value as needed */
-    margin: 50px auto 20px;
+    margin: 30px auto 10px;
     position: relative;
     padding-top: 28%; 
     overflow: hidden;
@@ -26,12 +26,14 @@ h1 {
     font-family: 'Rubik', sans-serif;
     font-weight: 800;
     font-size: 3rem;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 h3 {
     font-family: 'Rubik', sans-serif;
@@ -43,7 +45,9 @@ h3 {
     padding: 5px;
     margin: 10px auto;
     max-width: 30%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-bottom: 50px;
 }
 .option-row {
     display: flex;
@@ -117,16 +121,15 @@ h3 {
     outline: none;
     border-color: #4B0082;
 }
-.purple-box {
-    position: relative;
-    padding-bottom: 60px;
-}
 .submit-row {
     position: absolute;
-    bottom: 20px;
-    right: 30px;
+    bottom: 10px;
+    left: 35px;
+    right: 70px;
+    width: calc(100% - 70px);
 }
 #getClinic {
+    width: 100%;
     padding: 10px 20px;
     background-color: #4B0082;
     color: white;
